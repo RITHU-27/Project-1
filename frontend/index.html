@@ -1,13 +1,98 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>frontend</title>
-  </head>
-  <body>
-    <div id="root"></div>
+    <title>ATM Management System</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Secure ATM Banking System for balance inquiry, withdrawals, deposits, and fund transfers." />
+    <meta name="keywords" content="ATM, Banking, Withdrawal, Deposit, Balance Inquiry, Fund Transfer" />
+    <meta name="author" content="Naveena" />
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f172a, #1e293b);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 40px;
+            border-radius: 20px;
+            backdrop-filter: blur(12px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1rem;
+            margin-bottom: 25px;
+            color: #d1d5db;
+        }
+
+        .btn-group {
+            display: grid;
+            gap: 15px;
+        }
+
+        button {
+            padding: 12px;
+            border: none;
+            border-radius: 10px;
+            background: #2563eb;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #1d4ed8;
+            transform: scale(1.05);
+        }
+
+        .icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="icon">🏧</div>
+        <h1>ATM Management System</h1>
+        <p>Manage your banking transactions securely and efficiently.</p>
+
+        <div class="btn-group">
+            <button>💰 Balance Inquiry</button>
+            <button>💵 Cash Withdrawal</button>
+            <button>📥 Deposit Money</button>
+            <button>🔄 Fund Transfer</button>
+        </div>
+    </div>
+
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+</body>
 </html>
