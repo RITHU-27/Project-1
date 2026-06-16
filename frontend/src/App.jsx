@@ -49,7 +49,7 @@ function App() {
   return (
     <div className="atm-container">
       <div className="atm-card">
-        <h1>🏧 ATM Management System</h1>
+        <h4>🏧 ATM Management System</h4>
 
         <div className="balance-box">
           <h2>Available Balance</h2>
