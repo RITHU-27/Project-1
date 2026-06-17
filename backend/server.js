@@ -10,7 +10,7 @@ connectDB();
 
 const app = express();
 
-app.use(cors());
+app.use(cors(origin="https://project-1-dwnq.vercel.app/"));
 app.use(express.json());
 
 app.use((err, req, res, next) => {
