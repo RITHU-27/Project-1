@@ -13,6 +13,10 @@ const app = express();
 app.use(cors(origin="https://project-1-dwnq.vercel.app/"));
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.send("Backend is running");
+});
+
 app.use((err, req, res, next) => {
   console.error(err.stack);
 
