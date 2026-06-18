@@ -10,7 +10,9 @@ connectDB();
 
 const app = express();
 
-app.use(cors({ origin: "https://project-1-dwnq-git-main-rithanyaa-v-s-projects.vercel.app/" }));
+app.use(cors({
+  origin: true
+}));
 app.use(express.json());
 
 app.get("/", (req, res) => {
