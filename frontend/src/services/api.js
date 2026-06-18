@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = `${import.meta.env.VITE_API_URL}/api/atm`;
-
+console.log(import.meta.env.VITE_API_URL);
 export const signup = (data) => {
   return axios.post(`${API}/signup`, data);
 };
